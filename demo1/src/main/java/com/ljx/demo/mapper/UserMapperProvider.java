@@ -36,4 +36,13 @@ public class UserMapperProvider {
                 .WHERE("`password`="+"'${password}'")
                 .toString();
     }
+
+//    public String selectUserByNameSQL(){
+//        return new SQL()
+//                .INSERT_INTO("user")
+//                .VALUES("user_name", "#{user_name}")
+//                .VALUES("password", "#{password}")
+//                .VALUES("email", "#{email}")
+//                .toString();
+//    }
 }

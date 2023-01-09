@@ -18,4 +18,6 @@ public interface UserMapper {
 
     @DeleteProvider(type = UserMapperProvider.class, method = "deleteUserSQL")
     int deleteUser(@Param("user_name") String user_name, @Param("password") String password);
+//    @SelectProvider(type = UserMapperProvider.class, method = "selectUserByNameSQL")
+//    int selectUserByName(@Param("user_name") String user_name);
 }
